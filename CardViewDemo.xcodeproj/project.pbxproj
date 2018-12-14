@@ -13,6 +13,14 @@
 		86626E5F21C352CB000421BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86626E5E21C352CB000421BD /* Assets.xcassets */; };
 		86626E6221C352CB000421BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86626E6021C352CB000421BD /* LaunchScreen.storyboard */; };
 		86626E6521C352CB000421BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86626E6421C352CB000421BD /* main.m */; };
+		86626E7821C352D5000421BD /* bgf.png in Resources */ = {isa = PBXBuildFile; fileRef = 86626E6C21C352D5000421BD /* bgf.png */; };
+		86626E7921C352D5000421BD /* ca.png in Resources */ = {isa = PBXBuildFile; fileRef = 86626E6D21C352D5000421BD /* ca.png */; };
+		86626E7A21C352D5000421BD /* dy.png in Resources */ = {isa = PBXBuildFile; fileRef = 86626E6E21C352D5000421BD /* dy.png */; };
+		86626E7B21C352D5000421BD /* iron.png in Resources */ = {isa = PBXBuildFile; fileRef = 86626E6F21C352D5000421BD /* iron.png */; };
+		86626E7C21C352D5000421BD /* nw.png in Resources */ = {isa = PBXBuildFile; fileRef = 86626E7021C352D5000421BD /* nw.png */; };
+		86626E7D21C352D5000421BD /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86626E7321C352D5000421BD /* CardView.m */; };
+		86626E7E21C352D5000421BD /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86626E7521C352D5000421BD /* CollectionViewCell.m */; };
+		86626E7F21C352D5000421BD /* Flowlayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 86626E7721C352D5000421BD /* Flowlayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,17 @@
 		86626E6121C352CB000421BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86626E6321C352CB000421BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86626E6421C352CB000421BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		86626E6C21C352D5000421BD /* bgf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgf.png; sourceTree = "<group>"; };
+		86626E6D21C352D5000421BD /* ca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ca.png; sourceTree = "<group>"; };
+		86626E6E21C352D5000421BD /* dy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dy.png; sourceTree = "<group>"; };
+		86626E6F21C352D5000421BD /* iron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iron.png; sourceTree = "<group>"; };
+		86626E7021C352D5000421BD /* nw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nw.png; sourceTree = "<group>"; };
+		86626E7221C352D5000421BD /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
+		86626E7321C352D5000421BD /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
+		86626E7421C352D5000421BD /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		86626E7521C352D5000421BD /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		86626E7621C352D5000421BD /* Flowlayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flowlayout.h; sourceTree = "<group>"; };
+		86626E7721C352D5000421BD /* Flowlayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flowlayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,8 @@
 		86626E5421C352CA000421BD /* CardViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				86626E7121C352D5000421BD /* GMCardView */,
+				86626E6B21C352D5000421BD /* Resource */,
 				86626E5521C352CA000421BD /* AppDelegate.h */,
 				86626E5621C352CA000421BD /* AppDelegate.m */,
 				86626E5821C352CA000421BD /* ViewController.h */,
@@ -69,6 +90,31 @@
 				86626E6421C352CB000421BD /* main.m */,
 			);
 			path = CardViewDemo;
+			sourceTree = "<group>";
+		};
+		86626E6B21C352D5000421BD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				86626E6C21C352D5000421BD /* bgf.png */,
+				86626E6D21C352D5000421BD /* ca.png */,
+				86626E6E21C352D5000421BD /* dy.png */,
+				86626E6F21C352D5000421BD /* iron.png */,
+				86626E7021C352D5000421BD /* nw.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		86626E7121C352D5000421BD /* GMCardView */ = {
+			isa = PBXGroup;
+			children = (
+				86626E7221C352D5000421BD /* CardView.h */,
+				86626E7321C352D5000421BD /* CardView.m */,
+				86626E7421C352D5000421BD /* CollectionViewCell.h */,
+				86626E7521C352D5000421BD /* CollectionViewCell.m */,
+				86626E7621C352D5000421BD /* Flowlayout.h */,
+				86626E7721C352D5000421BD /* Flowlayout.m */,
+			);
+			path = GMCardView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,8 +174,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86626E7921C352D5000421BD /* ca.png in Resources */,
 				86626E6221C352CB000421BD /* LaunchScreen.storyboard in Resources */,
+				86626E7821C352D5000421BD /* bgf.png in Resources */,
+				86626E7B21C352D5000421BD /* iron.png in Resources */,
 				86626E5F21C352CB000421BD /* Assets.xcassets in Resources */,
+				86626E7A21C352D5000421BD /* dy.png in Resources */,
+				86626E7C21C352D5000421BD /* nw.png in Resources */,
 				86626E5D21C352CA000421BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,8 +193,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				86626E5A21C352CA000421BD /* ViewController.m in Sources */,
+				86626E7E21C352D5000421BD /* CollectionViewCell.m in Sources */,
 				86626E6521C352CB000421BD /* main.m in Sources */,
+				86626E7D21C352D5000421BD /* CardView.m in Sources */,
 				86626E5721C352CA000421BD /* AppDelegate.m in Sources */,
+				86626E7F21C352D5000421BD /* Flowlayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

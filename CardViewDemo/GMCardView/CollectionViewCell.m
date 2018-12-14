@@ -8,9 +8,9 @@
 
 #import "CollectionViewCell.h"
 @interface CollectionViewCell ()
-@property(nonatomic, strong) UIImageView *upView;
-@property(nonatomic, strong) UIView *bottomView;
-@property(nonatomic, strong) UISwipeGestureRecognizer *swipUp;
+@property (nonatomic, strong) UIImageView *upView;
+@property (nonatomic, strong) UIView *bottomView;
+@property (nonatomic, strong) UISwipeGestureRecognizer *swipUp;
 @property(nonatomic, strong) UISwipeGestureRecognizer *swipDown;
 @end
 @implementation CollectionViewCell

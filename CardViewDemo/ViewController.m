@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "GMCardView/CardView.h"
 @interface ViewController ()
 
 @end
@@ -15,9 +15,12 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    CardView *cardView = [[CardView alloc]initWithFrame:self.view.bounds];
+    cardView.dataArr = @[@"dy",@"ca",@"nw",@"iron",@"bgf"];
+    [self.view addSubview:cardView];
 }
-
 
 @end

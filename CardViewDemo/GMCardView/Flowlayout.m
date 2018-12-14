@@ -8,18 +8,25 @@
 
 #import "Flowlayout.h"
 
-CGFloat const itemSizeWith = 250;
-CGFloat const itemSizeHeight = 400;
 
+#define KMainW [UIScreen mainScreen].bounds.size.width
+#define KMainH [UIScreen mainScreen].bounds.size.height
+#define KScreenRate (375 / KMainW)
+#define KSuitFloat(float) (float / KScreenRate)
+
+
+CGFloat const itemSizeWith = 250;
+CGFloat const itemSizeHeight = 420;
 CGFloat const minimumLineSpacing = 50;
 
 @implementation Flowlayout
 - (instancetype)init{
     self = [super init];
-    self.itemSize = CGSizeMake(itemSizeWith, itemSizeHeight);
+    self.itemSize =
+    self.itemSize = CGSizeMake(KSuitFloat(itemSizeWith), KSuitFloat(itemSizeHeight));
     self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    self.sectionInset = UIEdgeInsetsMake(0, ([UIScreen mainScreen].bounds.size.width - itemSizeWith)/2.0, 0, ([UIScreen mainScreen].bounds.size.width - itemSizeWith)/2.0);
-    self.minimumLineSpacing = minimumLineSpacing;
+    self.sectionInset = UIEdgeInsetsMake(0, (KMainW - KSuitFloat(itemSizeWith))/2.0, 0, (KMainW - KSuitFloat(itemSizeWith))/2.0);
+    self.minimumLineSpacing = (KMainW - KSuitFloat(itemSizeWith)) / 4.0;
     return self;
 }
 
